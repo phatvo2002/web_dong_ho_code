@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../font/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../js/main.js">
+    <title>Tất cả sản phẩm</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="header-information">
+                <div class="grid">
+                    <div class="header-information_container"> 
+                        <ul class="header-information-icon">
+                            <li>HOTLINE:0708223608</li>
+                            <li style="margin-top: 3px;"> <img src="../img/logo/logo_small.png" alt=""
+                                    style="width: 15px; "> </li>
+                            <li> <a href="">HỆ THỐNG CỬA HÀNG</a> </li>
+                            <li style="margin-left: 7px;" class="header-information-icon-1"> <i
+                                    class="fa-brands fa-facebook-f" class="class-icon"></i> </li>
+                            <li class="header-information-icon-1"><i class="fa-brands fa-instagram"></i></li>
+                            <li class="header-information-icon-1"><i class="fa-brands fa-twitter"></i></li>
+                            <li class="header-information-icon-1"><i class="fa-regular fa-envelope"></i></li>
+                        </ul>
+                        <div class="cart_user">
+                            <a href="../html/dang_nhap.html" >
+                                <i class="fa-regular fa-user" style="color:aliceblue;"></i>
+                            </a>
+                          
+                            <a href="">
+                                <i class="fa-solid fa-cart-shopping" style="color:aliceblue;margin-left: 30px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="grid">
+                <div class="header-menu-logo-search">
+                   
+                    <div class="header-lolo">
+                        <img src="../img/logo/logo-shopdongho.png" alt="" style="margin-top: 15px;">
+                    </div>
+                    <div class="header-search">
+                        <i class="fa-solid fa-magnifying-glass" style="position: absolute; top: 35px; left: 11%;"></i>
+                          <input class="header-input" type="text" placeholder="tìm kiếm sản phẩm">
+                          <button class="button-header" type="submit">Tìm Kiếm</button>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="menu-layout">
+                  <div class="grid">
+                    <ul class="menu-list">
+                        <li><a href="../home.html"><i class="fa-sharp fa-solid fa-house" style="margin-right: 3px;"></i>Trang chủ</a></li>
+                        <li class="drop-down-list" style="color: #fff;"><i class="fa-solid fa-store" style="margin-right: 3px;"></i>Sản phẩm
+                             <div class="drop-down">
+                                <ul>
+                                    <li><a href="./html/dong_ho_nam.html">Tất cả sản phẩm</a></li>
+                                    <li><a href="">Đồng hồ nam</a></li>
+                                    <li><a href="">Đồng hồ nữ</a></li>
+                                    <li><a href="">Khuyến mãi</a></li>
+                                </ul>
+                             </div>
+                        </li>
+                        <li><a href=""><i class="fa-sharp fa-solid fa-newspaper" style="margin-right: 3px;"></i> Tin tức</a></li>
+                        <li><a href=""><i class="fa-solid fa-ticket-simple" style="margin-right: 3px;"></i>Giới thiệu</a></li>
+                    </ul>
+                  </div>
+            </section>
+           
+            <div class="container">
+                <section class="grid">
+                      <p style=" margin-bottom: 20px; font-size: 0.8rem;font-weight: 400;">Trang chủ <i class="fa-solid fa-chevron-right"></i><span style="margin-left: 4px;">sản phẩm</span></p>
+                </section>
+                <div class="grid">
+                    <div class="container_product_header">
+                        <div class="container_product_header_left">
+                            <h2>TẤT CẢ SẢN PHẨM</h2>
+                        </div>
+                        <div class="container_product_header_right">
+                            
+                            <div id="myBtnContainer">
+                                <button class="btn active" onclick="filterSelection('all')"> Tất cả</button>
+                                <button class="btn" onclick="filterSelection('over_milion')">Trên 2 triệu</button>
+                                <button class="btn" onclick="filterSelection('under_milion')"> Dưới 2 triệu</button>
+                                <button class="btn" onclick="filterSelection('under_three_milion')"> Dưới 3 triệu</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-product">
+                        <div class="nav-bar">
+                          <div><i class="fa-solid fa-bars" style="margin-right: 10px;"></i>DANH MỤC SẢN PHẨM</div>
+                          <div>
+                            <ul>
+                                <li><a href="" > Tất cả sản phẩm</a></li>
+                                <li><a href="">Đồng Hồ Nam</a></li>
+                                <li><a href="">Đồng Hồ Nữ</a></li>
+                                <li><a href="">Đồng Hồ Khuyến Mãi</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="grid_row grid-product">
+                            <div class="grid_colum-1-3 filterDiv under_three_milion">
+                                <div class="product_item">
+                                    <div class="button-sale">
+                                        <p>HOT</p>
+                                    </div>
+                                    <a href="">
+                                        <img src="../img/product/dong-ho-casio-mtp-1374l-1avdf-nam-pin-day-da-a.jpg" alt=""
+                                            class="product-img">
+                                        <p>Rhythm S1413S01-MSB-T Nam Quartz</p>
+                                    </a>
+                                    <div class="product-star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="price" style="text-align: center; margin-top: 4px;font-weight: 700;"> 2.099.000VNĐ</p>
+                                    <button type="button" class="product_button">Thêm Vào Giỏ hàng</button>
+                                </div>
+                            </div>
+
+                            <div class="grid_colum-1-3 filterDiv under_milion">
+                                <div class="product_item">
+                                    <div class="button-sale">
+                                        <p>HOT</p>
+                                    </div>
+                                    <a href="">
+                                        <img src="../img/product/dong-ho-casio-mtp-1381d-7avdf-nam-pin-day-inox-a-1.jpg" alt=""
+                                            class="product-img">
+                                        <p>Rhythm S1413S01-MSB-T Nam Quartz</p>
+                                    </a>
+                                    <div class="product-star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="price" style="text-align: center; margin-top: 4px;font-weight: 700;"> 1.710.000VNĐ</p>
+                                    <button type="button" class="product_button">Thêm Vào Giỏ hàng</button>
+                                </div>
+                            </div>
+
+                            <div class="grid_colum- filterDiv under_milion">
+                                <div class="product_item">
+                                   
+                                    <a href="">
+                                        <img src="../img/product/dong-ho-casio-mtp-v300l-7audf-nam-pin-day-da.jpg" alt=""
+                                            class="product-img">
+                                        <p>Rhythm S1413S01-MSB-T Nam Quartz</p>
+                                    </a>
+                                    <div class="product-star">
+                                    </div>
+                                    <p class="price" style="text-align: center; margin-top: 4px;font-weight: 700;">  1.607.000VNĐ</p>
+                                    <button type="button" class="product_button">Thêm Vào Giỏ hàng</button>
+                                </div>
+                            </div>
+
+                            <div class="grid_colum-2 filterDiv cars">
+                                <div class="product_item">
+                                  
+                                    <a href="">
+                                        <img src="../img/product/rhythm-S1413S01-MSB.jpg" alt=""
+                                            class="product-img">
+                                        <p>Rhythm S1413S01-MSB-T Nam Quartz</p>
+                                    </a>
+                                    <div class="product-star">
+                                    </div>
+                                    <p class="price" style="text-align: center; margin-top: 4px;font-weight: 700;">  1.917.000VNĐ</p>
+                                    <button type="button" class="product_button">Thêm Vào Giỏ hàng</button>
+                                </div>
+                            </div>
+                              
+                            <div class="grid_colum-2 filterDiv under_milion">
+                                <div class="product_item">
+                                   
+                                    <a href="">
+                                        <img src="../img/product/casio-g-shock-GA-110AC-7ADR.jpg" alt=""
+                                            class="product-img">
+                                        <p>Rhythm S1413S01-MSB-T Nam Quartz</p>
+                                    </a>
+                                    <div class="product-star">
+                                    </div>
+                                    <p class="price" style="text-align: center; margin-top: 4px;font-weight: 700;">  1.917.000VNĐ</p>
+                                    <button type="button" class="product_button">Thêm Vào Giỏ hàng</button>
+                                </div>
+                            </div>
+
+                            <div class="grid_colum-2 filterDiv under_milion">
+                                <div class="product_item">
+                                   
+                                    <a href="">
+                                        <img src="../img/product/Casio-MTP-VT01L-1BUDF.jpg" alt=""
+                                            class="product-img">
+                                        <p>Rhythm S1413S01-MSB-T Nam Quartz</p>
+                                    </a>
+                                    <div class="product-star">
+                                    </div>
+                                    <p class="price" style="text-align: center; margin-top: 4px;font-weight: 700;"> 1.088.000VNĐ</p>
+                                    <button type="button" class="product_button">Thêm Vào Giỏ hàng</button>
+                                </div>
+                            </div>
+
+                            <div class="grid_colum-2 filterDiv under_milion">
+                                <div class="product_item">
+                                   
+                                    <a href="">
+                                        <img src="../img/product/dong-ho-casio-b640wc-5adf-pin-nam-inox-1-1.jpg" alt=""
+                                            class="product-img">
+                                        <p>Rhythm S1413S01-MSB-T Nam Quartz</p>
+                                    </a>
+                                    <div class="product-star">
+                                    </div>
+                                    <p class="price" style="text-align: center; margin-top: 4px;font-weight: 700;">  803.000VNĐ</p>
+                                    <button type="button" class="product_button">Thêm Vào Giỏ hàng</button>
+                                </div>
+                            </div>
+
+                            <div class="grid_colum-2 filterDiv under_milion">
+                                <div class="product_item">
+                                  
+                                    <a href="">
+                                        <img src="../img/product/dong_ho_nam_2.jpg" alt=""
+                                            class="product-img">
+                                        <p>Rhythm S1413S01-MSB-T Nam Quartz</p>
+                                    </a>
+                                    <div class="product-star">
+                                    </div>
+                                    <p class="price" style="text-align: center; margin-top: 4px;font-weight: 700;"> 1.917.000VNĐ</p>
+                                    <button type="button" class="product_button">Thêm Vào Giỏ hàng</button>
+                                </div>
+                            </div>
+
+                            <div class="grid_colum-2 filterDiv under_milion">
+                                <div class="product_item">
+                                    
+                                    <a href="">
+                                        <img src="../img/product/đong_ho_nam_1.jpg" alt=""
+                                            class="product-img">
+                                        <p>Rhythm S1413S01-MSB-T Nam Quartz</p>
+                                    </a>
+                                    <div class="product-star">
+                                    </div>
+                                    <p class="product_item" style="text-align: center; margin-top: 4px;font-weight: 700;"> 3.628.000VNĐ</p>
+                                    <button type="button" class="product_button">Thêm Vào Giỏ hàng</button>
+                                </div>
+                            </div>
+
+                            <div class="grid_colum-2 filterDiv over_milion">
+                                <div class="product_item">
+                                    <div class="button-sale">
+                                        <p>HOT</p>
+                                    </div>
+                                    <a href="">
+                                        <img src="../img/product/dong_ho_nam_6.jpg" alt=""
+                                            class="product-img">
+                                        <p>Rhythm S1413S01-MSB-T Nam Quartz</p>
+                                    </a>
+                                    <div class="product-star">
+                                    </div>
+                                    <p class="price" style="text-align: center; margin-top: 4px;font-weight: 700;">5.337.000VNĐ</p>
+                                    <button type="button" class="product_button">Thêm Vào Giỏ hàng</button>
+                                </div>
+                            </div>
+
+                            <div class="grid_colum-2 filterDiv over_milion">
+                                <div class="product_item">
+                                    
+                                    <a href="">
+                                        <img src="../img/product/dong_ho_nam_3.jpg" alt=""
+                                            class="product-img">
+                                        <p>Rhythm S1413S01-MSB-T Nam Quartz</p>
+                                    </a>
+                                    <div class="product-star">
+                                    </div>
+                                    <p class="price" style="text-align: center; margin-top: 4px;font-weight: 700;">  3.356.000VNĐ</p>
+                                    <button type="button" class="product_button">Thêm Vào Giỏ hàng</button>
+                                </div>
+                            </div>
+
+                            <div class="grid_colum-2 filterDiv over_milion">
+                                <div class="product_item">
+                                    <div class="button-sale">
+                                        <p>-50%</p>
+                                    </div>
+                                    <a href="">
+                                        <img src="../img/product/dong_ho_nam_4.jpg" alt=""
+                                            class="product-img">
+                                        <p>Rhythm S1413S01-MSB-T Nam Quartz</p>
+                                    </a>
+                                    <div class="product-star">
+                                    </div>
+                                    <p class="price" style="text-align: center; margin-top: 4px;font-weight: 700;">  2.099.000VNĐ</p>
+                                    <button type="button" class="product_button">Thêm Vào Giỏ hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                       <script src="../js/cart.js">
+
+                       </script>
+                    </div>
+
+                      <script>
+                        filterSelection("all")
+                        function filterSelection(c) {
+                          var x, i;
+                          x = document.getElementsByClassName("filterDiv");
+                          if (c == "all") c = "";
+                          for (i = 0; i < x.length; i++) {
+                            w3RemoveClass(x[i], "show");
+                            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+                          }
+                        }
+                        
+                        function w3AddClass(element, name) {
+                          var i, arr1, arr2;
+                          arr1 = element.className.split(" ");
+                          arr2 = name.split(" ");
+                          for (i = 0; i < arr2.length; i++) {
+                            if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+                          }
+                        }
+                        
+                        function w3RemoveClass(element, name) {
+                          var i, arr1, arr2;
+                          arr1 = element.className.split(" ");
+                          arr2 = name.split(" ");
+                          for (i = 0; i < arr2.length; i++) {
+                            while (arr1.indexOf(arr2[i]) > -1) {
+                              arr1.splice(arr1.indexOf(arr2[i]), 1);     
+                            }
+                          }
+                          element.className = arr1.join(" ");
+                        }
+                        
+                        
+                        var btnContainer = document.getElementById("myBtnContainer");
+                        var btns = btnContainer.getElementsByClassName("btn");
+                        for (var i = 0; i < btns.length; i++) {
+                          btns[i].addEventListener("click", function(){
+                            var current = document.getElementsByClassName("active");
+                            current[0].className = current[0].className.replace(" active", "");
+                            this.className += " active";
+                          });
+                        }
+                        </script>
+                </div>
+               <div class="button_page">
+                      <div id="MyDiv">
+                         <button class="button_page_btn">1</button>
+                         <button class="button_page_btn">2</button>
+                         <button class="button_page_btn">3</button>
+                         <button class="button_page_btn">4</button>
+                         <button class="button_page_btn">5</button>
+                         <button class="button_page_btn">...</button>
+                         <button class="button_page_btn">10</button>
+                      </div>
+               </div>
+              
+            </div>
+
+            <div class="container_advertisement">
+                <div class="grid container_advertisement_box ">
+                    <div class="container_advertisement_item">
+                        <img src="../img/banner/award.png" alt="">
+                        <p>100% HÀNG CHÍNH HÃN</p>
+                    </div>
+                    <div class="container_advertisement_item">
+                        <img src="../img/banner/ReVeI8Y2-shipped.png" alt="">
+                        <p>MIỄN PHÍ VẬN CHUYỂN</p>
+                    </div>
+                    <div class="container_advertisement_item">
+                        <img src="../img/banner/7qQQ7Pkj-secure-shield.png" alt="">
+                        <p>BẢO HÀNH CHÍNH HÃN</p>
+                    </div>
+                    <div class="container_advertisement_item">
+                        <img src="../img/banner/mJMpAMmv-return.png" alt="">
+                        <p>ĐỔI HÀNG TRONG 7 NGÀY</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <section  class="grid">
+                       <div class="footer-part">
+                             <div class="footer-part-1">
+                                 <div class="footer-part-item">
+                                     <h5>Về chúng tôi</h5>
+                                     <ul>
+                                         <li><a href="">Dev : Võ Đăng Phát</a></li>
+                                         <li><a href="">Student : industrial University of Ho Chi Minh city </a></li>
+                                         <li><a href=""></a></li>
+                                         <li><a href=""></a></li>
+                                     </ul>
+                                 </div>
+                                 <div class="footer-part-item">
+                                     <h5> Chăm sóc khách hàng </h5>
+                                     <ul>
+                                         <li><a href="">Các vấn đề thường gặp </a></li>
+                                         <li><a href="">Chăm sóc khách hàng</a></li>
+                                         <li><a href="">Kế hoạch đổi trả </a></li>
+                                         <li><a href="">vấn đề thanh toán </a></li>
+                                     </ul>
+                                 </div>
+                                 <div class="footer-part-item">
+                                     <h5>Liên lạc với chúng tôi</h5>
+                                     <ul>
+                                         <li><a href="">Email: Vodangphat2002@gmai.com</a></li>
+                                         <li><a href="">Phone number :0708223608</a></li>
+                                         <li><a href="">Facebook: Võ Đăng Phát</a></li>
+                                         <li><a href=""></a></li>
+                                     </ul>
+                                 </div>
+                             </div>
+                             <div class="footer-part-2">
+                                    <input type="email" name="" id="" placeholder="email:">
+                                    <button type="submit">Subcribe</button>
+                             </div>
+                            
+                            
+                       </div>
+                       <div class="footer-icon">
+                         <i class="fa-sharp fa-solid fa-envelope"></i>
+                         <i class="fa-brands fa-facebook"></i>
+                         <i class="fa-brands fa-instagram"></i>
+                       </div>
+                       <div class="footer-end">
+                         <span>@2023 Vodangphat</span>
+                       </div>
+                </section>
+             </div>
+        </div>
+    </div>
+</body>
+
+</html>
